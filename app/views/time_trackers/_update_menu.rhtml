@@ -1,5 +1,7 @@
 <% if User.current.logged? %>
 
+<%= javascript_include_tag 'time_tracker.js', :plugin => 'redmine_time_tracker' %>
+
 <!--
 This script replaces the <a id="time-tracker-menu">...</a> element by a span with the same id.
 This is needed as we want several links for our time tracker menu item.
